@@ -1,5 +1,22 @@
+:root {
+  --std-max-width: none;
+}
+
+body {
+  background: #fcfcfc;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Helvetica, sans-serif;
+  color: #3d3b39;
+  font-size: 1em;
+}
+
 main > header {
-  padding: 2em 0;
+  padding: 1em;
+  text-align: center;
+  font-weight: normal;
+  font-size: .8rem;
 }
 
 details {
@@ -8,4 +25,10 @@ details {
 
 footer {
   text-align: center;
+  padding: 1em;
+  font-size: .8rem;
 }
+
+img.banner {
+  max-width: 2048px;
+  width: 100%; }

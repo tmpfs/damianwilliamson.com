@@ -1,3 +1,4 @@
-# Default
+# damianwilliamson.com
 
-Default website blueprint.
+Selected projects by Damian Williamson.
+
