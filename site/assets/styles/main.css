@@ -2,14 +2,27 @@
   --std-max-width: none;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  background: #fcfcfc;
+  background: black;
+  min-height: 100vh;
+  background: #e9e7e2;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: Helvetica, sans-serif;
   color: #3d3b39;
   font-size: 1em;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 main > header {
@@ -19,13 +32,21 @@ main > header {
   font-size: .8rem;
 }
 
+main > header, main > footer {
+  flex: 0;
+}
+
+article {
+  flex: 1;
+}
+
 footer {
   text-align: center;
   padding: 1em;
   font-size: .8rem;
 }
 
-footer a {
+footer > * {
   display: inline-block;
   vertical-align: middle;
 }
@@ -33,6 +54,7 @@ footer a {
 img.banner {
   max-width: 2048px;
   width: 100%; 
+  object-fit: cover;
 }
 
 .home-images {
@@ -51,3 +73,77 @@ img.banner {
   margin-bottom: 1em;
 }
 
+
+/* Slider */
+
+.slider {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-links {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slides {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.slider-links > a {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  background: #666;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 4px 12px 0;
+  position: relative;
+}
+
+.slider-links > a:active {
+  top: 1px;
+}
+
+.slider-links > a:focus {
+  background: #333;
+}
