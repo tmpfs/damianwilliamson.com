@@ -47,7 +47,7 @@ img.banner {
   margin: 0 auto;
 }
 
-.home-images > div {
+.home-images > div:not(:last-child) {
   margin-bottom: 1em;
 }
 
