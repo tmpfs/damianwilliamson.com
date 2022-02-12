@@ -19,16 +19,28 @@ main > header {
   font-size: .8rem;
 }
 
-details {
-  margin-bottom: 1em;
-}
-
 footer {
   text-align: center;
   padding: 1em;
   font-size: .8rem;
 }
 
+footer a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 img.banner {
   max-width: 2048px;
-  width: 100%; }
+  width: 100%; 
+}
+
+.home-images img {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.home-images > div {
+  margin-bottom: 1em;
+}
+
