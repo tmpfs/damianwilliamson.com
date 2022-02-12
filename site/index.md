@@ -3,5 +3,5 @@ title = "Damian Williamson"
 +++
 
 <div>
-<img class="banner" src="{{link "/assets/konami.png"}}" />
+<img class="banner" src="{{link "/assets/home-dining.jpg"}}" />
 </div>
