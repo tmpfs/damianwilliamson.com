@@ -73,18 +73,6 @@ img.banner {
   margin-bottom: 1em;
 }
 
-.home-page > p {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.home-page a.instagram {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-}
-
 /* Slider */
 
 .slider {

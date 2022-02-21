@@ -9,7 +9,7 @@ title = "Damian Williamson"
         <img class="banner" src="{{link "/assets/home-dining.jpg"}}" />
       </div>
       <div id="slide-2">
-        <img class="banner" src="{{link "/assets/home-dining.jpg"}}" />
+        <img class="banner" src="{{link "/assets/home-kitchen.jpg"}}" />
       </div>
     </div>
     <div class="slider-links">
@@ -17,10 +17,4 @@ title = "Damian Williamson"
     </div>
   </div>
 
-  <a
-    class="instagram"
-    href="https://instagram.com/damianwilliamson_official"
-    title="@damianwilliamson_official">
-    <img width="16" height="16" src="{{ link "/assets/instagram-brands.svg" }}" />
-  </a>
 </div>
